@@ -56,7 +56,7 @@ const JobSeekerRegistrationForm = () => {
 		<div className={classes.root}>
 			<Paper component='main' className={classes.container}>
 				<div className={classes.paper}>
-					<Typography component='h1' variant='h5'>
+					<Typography component='h1' variant='h4'>
 						Job Seeker Registration Form
 					</Typography>
 					<form className={classes.form}>
@@ -84,6 +84,7 @@ const JobSeekerRegistrationForm = () => {
 										placeholder='Date of birth'
 										id='date-of-birth'
 										aria-describedby='date-of-birth'
+										defaultValue='2000-12-24'
 									/>
 								</FormControl>
 								{/* Gender */}
@@ -153,10 +154,10 @@ const JobSeekerRegistrationForm = () => {
 									<TextField
 										select
 										label='Preferred Job Category'
-										labelId='job-category'
 										id='job-category'
 										variant='outlined'
 										size='small'
+										defaultValue='10'
 									>
 										<MenuItem value={10}>Ten</MenuItem>
 										<MenuItem value={20}>Twenty</MenuItem>
@@ -173,8 +174,8 @@ const JobSeekerRegistrationForm = () => {
 										placeholder='eg Bachelor in science'
 										label='Education'
 										multiline
-										rows={3}
-										rowsMax={4}
+										minRows={3}
+										maxRows={4}
 									/>
 								</FormControl>
 
@@ -187,8 +188,8 @@ const JobSeekerRegistrationForm = () => {
 										placeholder='eg. 5 years of teaching experience'
 										label='Experience'
 										multiline
-										rows={3}
-										rowsMax={4}
+										minRows={3}
+										maxRows={4}
 									/>
 								</FormControl>
 
@@ -211,6 +212,9 @@ const JobSeekerRegistrationForm = () => {
 									</Grid>
 								</Grid>
 							</Grid>
+							<Button color='secondary' variant='contained' fullWidth>
+								Submit
+							</Button>
 						</Grid>
 					</form>
 				</div>

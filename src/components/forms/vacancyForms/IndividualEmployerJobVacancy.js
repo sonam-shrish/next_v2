@@ -32,16 +32,16 @@ const useStyles = makeStyles({
 		marginBottom: '20px',
 	},
 });
-const CompanyRegistrationForm = () => {
+const IndividualEmployerJobVacancy = () => {
 	const classes = useStyles();
 	return (
 		<div className={classes.root}>
 			<Paper className={classes.container}>
 				<form>
 					<Typography className={classes.title} variant='h4' component='h2'>
-						Company Job Vacancy
+						Individual Employer Job Vacancy
 					</Typography>
-					<Grid container spacing={1}>
+					<Grid container spacing={2}>
 						<Grid item xs={12} md={6}>
 							{/* Job Title */}
 							<FormControl fullWidth className={classes.formControl}>
@@ -63,7 +63,6 @@ const CompanyRegistrationForm = () => {
 									id='job-category'
 									variant='outlined'
 									size='small'
-									value={10}
 								>
 									<MenuItem value={10}>Ten</MenuItem>
 									<MenuItem value={20}>Twenty</MenuItem>
@@ -242,4 +241,4 @@ const CompanyRegistrationForm = () => {
 	);
 };
 
-export default CompanyRegistrationForm;
+export default IndividualEmployerJobVacancy;

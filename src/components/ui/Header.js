@@ -68,7 +68,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = (props) => {
 	const router = useRouter();
-	console.log(router);
 	const classes = useStyles();
 
 	const [activeTab, setActiveTab] = useState(0);

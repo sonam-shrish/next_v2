@@ -64,10 +64,10 @@ const CompanyRegistrationForm = () => {
 								<TextField
 									select
 									label='Select Industry'
-									labelId='industry'
 									id='industry-select'
 									variant='outlined'
 									size='small'
+									defaultValue='10'
 								>
 									<MenuItem value={10}>Ten</MenuItem>
 									<MenuItem value={20}>Twenty</MenuItem>
@@ -139,15 +139,16 @@ const CompanyRegistrationForm = () => {
 							{/* Address */}
 							<FormGroup>
 								<InputLabel id='address'>Address</InputLabel>
+								<br />
 								{/* Province */}
 								<FormControl fullWidth className={classes.formControl}>
 									<TextField
 										select
-										labelId='province'
 										id='province-select'
 										variant='outlined'
 										label='Select Province'
 										size='small'
+										defaultValue='10'
 									>
 										<MenuItem value={10}>Ten</MenuItem>
 										<MenuItem value={20}>Twenty</MenuItem>
@@ -163,8 +164,8 @@ const CompanyRegistrationForm = () => {
 									size='small'
 									variant='outlined'
 									label='Select District'
-									labelId='district'
 									id='district-select'
+									defaultValue='10'
 								>
 									<MenuItem value={10}>Ten</MenuItem>
 									<MenuItem value={20}>Twenty</MenuItem>
@@ -175,17 +176,11 @@ const CompanyRegistrationForm = () => {
 							{/* City */}
 							<FormControl fullWidth className={classes.formControl}>
 								<TextField
-									select
 									size='small'
 									variant='outlined'
-									labelId='city'
 									label='City'
 									id='city-select'
-								>
-									<MenuItem value={10}>Ten</MenuItem>
-									<MenuItem value={20}>Twenty</MenuItem>
-									<MenuItem value={30}>Thirty</MenuItem>
-								</TextField>
+								></TextField>
 							</FormControl>
 							{/* Local Area */}
 							<FormControl fullWidth className={classes.formControl}>
@@ -232,8 +227,8 @@ const CompanyRegistrationForm = () => {
 									placeholder='Eg. annual bonus'
 									label='Company Details'
 									multiline
-									rows={3}
-									rowsMax={4}
+									minRows={3}
+									maxRows={4}
 								/>
 							</FormControl>
 						</Grid>
