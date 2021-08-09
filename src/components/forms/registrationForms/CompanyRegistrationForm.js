@@ -60,7 +60,11 @@ const CompanyRegistrationForm = () => {
 
 							{/* Industry */}
 
-							<FormControl fullWidth className={classes.formControl}>
+							<FormControl
+								fullWidth
+								className={classes.formControl}
+								variant='outlined'
+							>
 								<TextField
 									select
 									label='Select Industry'

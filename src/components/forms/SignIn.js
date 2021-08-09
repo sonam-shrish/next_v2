@@ -8,6 +8,7 @@ import {
 	Button,
 	Grid,
 } from '@material-ui/core';
+import Link from 'next/link';
 
 import { Facebook } from '@material-ui/icons';
 
@@ -31,9 +32,9 @@ function Copyright() {
 	return (
 		<Typography variant='body2' color='textSecondary' align='center'>
 			{'Copyright © '}
-			<a color='inherit' href='https://material-ui.com/'>
+			<Link color='inherit' href='https://material-ui.com/'>
 				Kaamxa.com
-			</a>{' '}
+			</Link>{' '}
 			{new Date().getFullYear()}
 			{'.'}
 		</Typography>
@@ -111,15 +112,15 @@ const Login = () => {
 						{/* Forgot Password and Sign Up */}
 						<Grid container>
 							<Grid item xs>
-								<a href='#' variant='body2'>
+								<Link href='#' variant='body2'>
 									Forgot Password
-								</a>
+								</Link>
 							</Grid>
 							<Grid item>
 								{/* USE NEXT JS LINK HERE */}
-								<a href='#' variant='body2'>
+								<Link href='#' variant='body2'>
 									{"Don't have an account? Sign Up"}
-								</a>
+								</Link>
 							</Grid>
 						</Grid>
 					</form>
