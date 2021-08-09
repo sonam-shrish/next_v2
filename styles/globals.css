@@ -1,0 +1,12 @@
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+}
+
+/* tablet and ipad 1280*/
+
+.whiteText {
+	color: white;
+}
