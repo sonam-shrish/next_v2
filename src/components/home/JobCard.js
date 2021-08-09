@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import {
 	Chip,
 	makeStyles,
@@ -42,7 +43,7 @@ const JobCard = () => {
 			<CardContent m={10}>
 				<Grid item sm={10} md={11} lg={11}>
 					<div className={classes.row1}>
-						<img className={classes.jobIcon} src={testImg} />
+						<Image className={classes.jobIcon} alt='logo' src={testImg} />
 						<div id='home__job_details'>
 							<Typography
 								variant='h6'

@@ -8,6 +8,7 @@ import {
 	Chip,
 } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
+import Image from 'next/image';
 
 import { Favorite } from '@material-ui/icons';
 
@@ -44,7 +45,7 @@ const SearchResultCard = () => {
 			<Card className={classes.card}>
 				<CardContent>
 					<div className={classes.row1}>
-						<img src='' className={classes.avatar} alt='job avatar' />
+						<Image src='' className={classes.avatar} alt='job avatar' />
 						<IconButton>
 							<Favorite className={classes.favoriteIcon} />
 						</IconButton>

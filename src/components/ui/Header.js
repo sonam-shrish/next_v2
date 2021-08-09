@@ -87,7 +87,7 @@ const Header = (props) => {
 			case 3:
 				setActiveTab(4);
 		}
-	}, []);
+	}, [activeTab]);
 
 	function ElevationScroll(props) {
 		const { children } = props;
